@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management System</title>
+    <link rel="stylesheet" href="CRUDS.CSS">
+    <script src="CRUDS.js" defer></script>
+</head>
+<body>
+<div class="crud">
+    <div class="head">
+        <h1>CRUDS</h1>
+        <h2>Product Management System</h2>
+    </div>
+    <!-->Anas lafraoui<!-->
+
+    <div class="input">
+        <input type="text" placeholder="Title" id="title"> 
+
+        <div class="price">
+            <input onkeyup="getTotal()" type="text" placeholder="Price" id="price">
+            <input onkeyup="getTotal()" type="number" placeholder="Taxes" id="tax">
+            <input onkeyup="getTotal()" type="number" placeholder="Ads" id="ads">
+            <input onkeyup="getTotal()" type="number" placeholder="Discount" id="disc">
+            <small id="total"></small>
+        </div>
+        
+        <input type="number" placeholder="Count" id="count"><br>
+        <input type="text" id="category" placeholder="Category"><br>
+        <button id="btn">Create</button>
+    </div>
+    
+    <div class="output">
+        <div class="searchblock">
+            <input type="text" id="search" placeholder="Search"><br>
+            <div class="btnsearch">
+                <button id="sbt">Search By Title</button> 
+                <button id="sbc">Search By Category</button>
+            </div>
+            <div id="all">
+
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Ads</th>
+                        <th>Taxes</th>
+                        <th>Discount</th>
+                        <th>Category</th>
+                        <th>Total</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                   
+                
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
